@@ -10,19 +10,19 @@ return [
         ],
     ],
     [
-        'question' => 'Apa itu tabungan?',
+        'question' => 'Apa keuntungan utama dari diversifikasi investasi?',
         'options' => [
-            ['text' => 'Uang yang dipinjam dari bank', 'correct' => false],
-            ['text' => 'Uang yang disimpan untuk masa depan', 'correct' => true],
-            ['text' => 'Investasi di saham', 'correct' => false],
+            ['text' => 'Meningkatkan return', 'correct' => false],
+            ['text' => 'Mengurangi resiko', 'correct' => true],
+            ['text' => 'Mempercepat pertumbuhan', 'correct' => false],
         ],
     ],
     [
-        'question' => 'Apa tujuan dari investasi?',
+        'question' => 'Berapa persen dari penghasilan yang disarankan untuk dana darurat?',
         'options' => [
-            ['text' => 'Menghambur-hamburkan uang', 'correct' => false],
-            ['text' => 'Meningkatkan kekayaan di masa depan', 'correct' => true],
-            ['text' => 'Membayar utang', 'correct' => false],
+            ['text' => '10%-15%', 'correct' => false],
+            ['text' => '80%-100%', 'correct' => false],
+            ['text' => '20%-30%', 'correct' => true],
         ],
     ],
 ];

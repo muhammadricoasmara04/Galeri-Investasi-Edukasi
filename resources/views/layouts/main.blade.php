@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-...hash-di-sini..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles / Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js',])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 

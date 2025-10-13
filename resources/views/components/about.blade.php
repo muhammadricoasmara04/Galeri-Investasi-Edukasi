@@ -2,7 +2,7 @@
 <div id="{{ $id }}" class="w-full bg-white border-gray-200 h-auto p-4">
     <div class="mx-auto max-w-4xl text-center">
         <h1 class="text-[32px] sm:text-[42px] text-black font-extrabold mt-20">
-            Tentang Galeri Investasi Edukasi
+            Tentang Galeri Investasi Edukasi 
         </h1>
         <p class="text-[18px] sm:text-[24px] mt-2 text-[#4B5563]">
             Program inovatif SMA Negeri 1 Pelaihari untuk mempersiapkan generasi muda yang melek finansial dan teknologi

@@ -33,7 +33,7 @@
                  class="font-medium flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0 p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg md:border-0 bg-gray-50 md:bg-transparent">
                  <li>
                      <a href="#beranda"
-                         class="group relative block py-2 px-3 mt-2 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Beranda
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -41,7 +41,7 @@
                  </li>
                  <li>
                      <a href="#about"
-                         class="group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Tentang
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -49,7 +49,7 @@
                  </li>
                  <li>
                      <a href="#education"
-                         class="group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Edukasi
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -57,7 +57,7 @@
                  </li>
                  <li>
                      <a href="#tools"
-                         class="group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Tools
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -65,7 +65,7 @@
                  </li>
                  <li>
                      <a href="#galery"
-                         class="group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Galeri
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -73,7 +73,7 @@
                  </li>
                  <li>
                      <a href="#contact"
-                         class="group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
+                         class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Kontak
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -85,14 +85,38 @@
  </nav>
 
  <script>
-     document.addEventListener('DOMContentLoaded', function() {
-         const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
-         const navMenu = document.getElementById('navbar-default');
+     document.addEventListener('DOMContentLoaded', () => {
+         const sections = document.querySelectorAll('section[id]');
+         const navLinks = document.querySelectorAll('.nav-link');
+         const toggleBtn = document.querySelector('[data-collapse-toggle]');
+         const targetMenu = document.getElementById(toggleBtn.getAttribute('data-collapse-toggle'));
 
-         if (toggleButton && navMenu) {
-             toggleButton.addEventListener('click', () => {
-                 navMenu.classList.toggle('hidden');
+         toggleBtn.addEventListener('click', () => {
+             targetMenu.classList.toggle('hidden');
+         });
+
+         window.addEventListener('scroll', () => {
+             let scrollY = window.pageYOffset;
+
+             sections.forEach(section => {
+                 const sectionHeight = section.offsetHeight;
+                 const sectionTop = section.offsetTop - 80; // sesuaikan dengan tinggi navbar
+                 const sectionId = section.getAttribute('id');
+
+                 if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                     navLinks.forEach(link => {
+                         // Reset semua link
+                         link.classList.remove('text-blue-700', 'font-bold');
+                         link.classList.add('text-gray-900');
+
+                         // Tambahkan aktif jika cocok
+                         if (link.getAttribute('href') === `#${sectionId}`) {
+                             link.classList.add('text-blue-700', 'font-bold');
+                             link.classList.remove('text-gray-900');
+                         }
+                     });
+                 }
              });
-         }
+         });
      });
  </script>

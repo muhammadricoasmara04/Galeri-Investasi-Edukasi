@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="bg-slate-400 font-poppins">
+<body class="bg-white font-poppins">
 
     @include('layouts.partial.navbar')
 

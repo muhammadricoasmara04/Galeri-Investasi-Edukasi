@@ -1,9 +1,9 @@
-<div class="w-full bg-[#6C6DD2] border-gray-200 h-auto p-4">
+<div id="{{ $id }}" class="w-full bg-[#6C6DD2] border-gray-200 h-auto p-4">
     <div class="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 mt-2">
 
         <!-- Text Section -->
         <div class="m-4 text-center lg:text-left">
-            <h1 class="text-4xl sm:text-5xl lg:text-[60px] font-extrabold leading-tight text-white">
+            <h1 class="text-4xl sm:text-5xl lg:text-[58px] font-extrabold leading-tight text-white">
                 Membangun<br class="hidden sm:block" />
                 Literasi Keuangan<br class="hidden sm:block" />
                 Digital

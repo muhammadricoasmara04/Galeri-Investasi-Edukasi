@@ -1,6 +1,7 @@
-<div class="w-full bg-white border-gray-200 h-auto p-4">
+@props(['id' => null])
+<div id="{{ $id }}" class="w-full bg-white border-gray-200 h-auto p-4">
     <div class="mx-auto max-w-6xl text-center">
-        <h1 class="text-[32px] sm:text-[42px] text-black font-extrabold mt-32">Tools Edukasi</h1>
+        <h1 class="text-[32px] sm:text-[42px] text-black font-extrabold mt-10">Tools Edukasi</h1>
         <p class="text-[18px] sm:text-[24px] mt-2 text-[#4B5563]">
             Alat interaktif untuk mempraktikkan konsep keuangan
         </p>

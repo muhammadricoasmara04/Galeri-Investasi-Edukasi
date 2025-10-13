@@ -2,7 +2,7 @@
 <section id="{{ $id }}" class="py-10 bg-white">
     <div class="max-w-6xl mx-auto px-4 mt-10">
         <div class="mx-auto max-w-4xl text-center">
-            <h2 class="text-3xl font-bold mb-6 text-center">Galeri Kegiatan</h2>
+            <h2 class="text-[28px] sm:text-[40px] lg:text-[42px] font-bold mb-6 text-center">Galeri Kegiatan</h2>
             <p class="text-[18px] sm:text-[24px] mt-2 text-[#4B5563]">
                 Dokumentasi pembelajaran dan pencapaian siswa
             </p>

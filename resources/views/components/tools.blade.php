@@ -1,4 +1,4 @@
-@props(['id' => null])
+@props(['id' => null, 'quizData' => []])
 <section id="{{ $id }}" class="w-full bg-white border-gray-200 h-auto p-4">
     <div class="mx-auto max-w-6xl text-center">
         <h1 class="text-[32px] sm:text-[42px] text-black font-extrabold mt-10">Tools Edukasi</h1>
@@ -84,6 +84,9 @@
 </section>
 
 @push('scripts')
+    <script>
+        const quizQuestions = @json($quizData);
+    </script>
     <script src="{{ asset('js/investment-calculator.js') }}"></script>
     <script src="{{ asset('js/quiz.js') }}"></script>
 @endpush

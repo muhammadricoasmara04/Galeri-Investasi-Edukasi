@@ -9,6 +9,7 @@ class GaleryController extends Controller
     public function index()
     {
         $galery = include base_path('resources/utils/datagalery.php');
-        return view('home.home', compact('galery'));
+        $quizData = include base_path('resources/utils/quiz.php');
+        return view('home.home', compact('galery','quizData'));
     }
 }

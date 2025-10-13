@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GaleryController;
+use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,3 +13,4 @@ Route::get('/test', function () {
 });
 
 Route::get('/', [GaleryController::class, 'index']);
+

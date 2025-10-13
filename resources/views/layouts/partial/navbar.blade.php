@@ -84,17 +84,6 @@
       </div>
   </nav>
 
-  {{-- Hero Section --}}
-  <section class="text-center py-16 bg-blue-700 text-white">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Membangun Literasi Keuangan Digital</h1>
-      <p class="max-w-xl mx-auto text-lg mb-6">
-          Belajar investasi dan mengelola keuangan dengan teknologi modern untuk masa depan yang lebih cerah.
-      </p>
-      <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500">
-          Mulai Belajar
-      </button>
-  </section>
-
   <script>
       document.addEventListener('DOMContentLoaded', function() {
           const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');

@@ -2,7 +2,9 @@
      <div class="max-w-screen-xl flex items-center justify-between mx-auto p-3 relative">
          {{-- Logo --}}
          <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse min-w-0">
-             <i class="fa-solid fa-graduation-cap text-white bg-blue-700 p-4 rounded-full text-lg flex-shrink-0"></i>
+             <div class="w-12 h-12 flex items-center justify-center bg-blue-700 rounded-full flex-shrink-0">
+                 <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+             </div>
              <div class="flex flex-col min-w-0">
                  <span class="text-xl font-semibold text-gray-900 whitespace-nowrap truncate">
                      Galeri Investasi Edukasi
@@ -12,6 +14,7 @@
                  </span>
              </div>
          </a>
+
 
          {{-- Tombol Hamburger --}}
          <button data-collapse-toggle="navbar-default" type="button"

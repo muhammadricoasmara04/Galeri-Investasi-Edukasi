@@ -15,12 +15,12 @@
         class="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl max-w-5xl mx-auto">
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            <!-- Ikon & Modul 1 -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-red-500 w-12 h-12 rounded-lg flex items-center justify-center">
+            <!-- Modul 1 -->
+            <div class="flex items-start space-x-4 w-full h-full bg-white p-4 rounded-lg shadow">
+                <div class="bg-red-500 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <i class="fas fa-piggy-bank text-white"></i>
                 </div>
-                <div>
+                <div class="flex-1">
                     <h3 class="text-lg font-semibold">Dasar Menabung</h3>
                     <p class="text-gray-600 text-sm">
                         Memahami pentingnya menabung dan cara memulai kebiasaan menabung
@@ -28,12 +28,12 @@
                 </div>
             </div>
 
-            <!-- Ikon & Modul 2 -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center">
+            <!-- Modul 2 -->
+            <div class="flex items-start space-x-4 w-full h-full bg-white p-4 rounded-lg shadow">
+                <div class="bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <i class="fas fa-credit-card text-white"></i>
                 </div>
-                <div>
+                <div class="flex-1">
                     <h3 class="text-lg font-semibold">Manajemen Utang</h3>
                     <p class="text-gray-600 text-sm">
                         Cara bijak mengelola utang dan menghindari jebakan utang
@@ -41,12 +41,12 @@
                 </div>
             </div>
 
-            <!-- Ikon & Modul 3 -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center">
+            <!-- Modul 3 -->
+            <div class="flex items-start space-x-4 w-full h-full bg-white p-4 rounded-lg shadow">
+                <div class="bg-green-500 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <i class="fas fa-seedling text-white"></i>
                 </div>
-                <div>
+                <div class="flex-1">
                     <h3 class="text-lg font-semibold">Investasi Pemula</h3>
                     <p class="text-gray-600 text-sm">
                         Pengenalan instrumen investasi dan cara memulai investasi
@@ -54,12 +54,12 @@
                 </div>
             </div>
 
-            <!-- Ikon & Modul 4 -->
-            <div class="flex items-start space-x-4">
-                <div class="bg-purple-500 w-12 h-12 rounded-lg flex items-center justify-center">
+            <!-- Modul 4 -->
+            <div class="flex items-start space-x-4 w-full h-full bg-white p-4 rounded-lg shadow">
+                <div class="bg-purple-500 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <i class="fas fa-shield-alt text-white"></i>
                 </div>
-                <div>
+                <div class="flex-1">
                     <h3 class="text-lg font-semibold">Asuransi & Proteksi</h3>
                     <p class="text-gray-600 text-sm">
                         Memahami pentingnya proteksi finansial dan jenis-jenis asuransi
@@ -72,6 +72,7 @@
             <span class="text-blue-600 text-sm font-medium">Lihat Detail Semua Modul →</span>
         </div>
     </div>
+
 
 
     <!-- Gambar Responsive -->

@@ -2,33 +2,45 @@
 
 return [
     [
-        'title' => 'Workshop Investasi',
+        'id' => 1,
+        'title' => 'Sosialisasi',
         'image' => 'img/galery/invest.png',
-        'description' => 'Siswa belajar konsep investasi melalui simulasi interaktif'
+        'description' => 'Siswa belajar konsep investasi melalui simulasi interaktif',
+        'fulldes' => ''
     ],
     [
-        'title' => 'Presentasi Proyek',
+        'id' => 2,
+        'title' => 'Pelatihan',
         'image' => 'img/galery/presen-project.png',
-        'description' => 'Presentasi rencana keuangan pribadi hasil karya siswa'
+        'description' => 'Presentasi rencana keuangan pribadi hasil karya siswa',
+        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
     ],
     [
-        'title' => 'Praktik Digital Banking',
+        'id' => 3,
+        'title' => '3.	Penerapan teknologi',
         'image' => 'img/galery/digital-banking.png',
-        'description' => 'Pengalaman langsung menggunakan aplikasi keuangan digital'
+        'description' => 'Pengalaman langsung menggunakan aplikasi keuangan digital',
+        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
     ],
     [
-        'title' => 'Seminar Ahli Keuangan',
+        'id' => 4,
+        'title' => 'Pendampingan',
         'image' => 'img/galery/financial-expert.png',
-        'description' => 'Narasumber ahli berbagi pengalaman dan tips investasi'
+        'description' => 'Narasumber ahli berbagi pengalaman dan tips investasi',
+        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
     ],
     [
-        'title' => 'Pencapaian Siswa',
+        'id' => 5,
+        'title' => 'Evaluasi serta keberlanjutan program',
         'image' => 'img/galery/achievment-student.png',
-        'description' => 'Penghargaan kompetisi literasi keuangan tingkat daerah'
+        'description' => 'Penghargaan kompetisi literasi keuangan tingkat daerah',
+        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
     ],
     [
+        'id' => 6,
         'title' => 'Ruang Galeri Investasi',
         'image' => 'img/galery/room-galery.png',
-        'description' => 'Fasilitas pembelajaran modern dengan teknologi terkini'
+        'description' => 'Fasilitas pembelajaran modern dengan teknologi terkini',
+        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
     ],
 ];

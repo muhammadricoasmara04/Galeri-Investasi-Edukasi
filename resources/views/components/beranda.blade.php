@@ -1,18 +1,23 @@
 @props(['id' => null])
-<section id="{{ $id }}" class="bg-[#6C6DD2] py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div
-        class="max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-center">
+    <img class="w-[800px]" src="/img/beranda/lms.png">
+</div>
 
+<section id="{{ $id }}" class="bg-[#6C6DD2] py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div
+        class="max-w-screen-lg mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 px-4 sm:px-6 lg:px-8">
         <!-- Text Section -->
         <div class="flex-1 text-center lg:text-left">
-            <h1 class="text-4xl sm:text-5xl lg:text-[58px] font-extrabold leading-tight text-white">
-                Membangun<br class="hidden sm:block" />
-                Literasi Keuangan<br class="hidden sm:block" />
-                Digital
-            </h1>
-            <p class="mt-4 text-white text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
+
+            <p class="mb-10 text-white text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
                 Belajar investasi dan mengelola keuangan dengan teknologi modern untuk masa depan yang lebih cerah
             </p>
+            <h1 class="text-2xl sm:text-5xl lg:text-[42px] font-extrabold leading-tight text-white">
+                PENERIMA PENDANAAN
+            </h1>
+            <p class="mt-4 text-white text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
+                Kuasai Literasi & Digital KEUANGAN, Wujudkan Masa Depan yang Lebih Baik! </p>
             <div class="mt-6 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                 <a
                     class="text-base sm:text-lg inline-block text-white bg-[#EAB308] hover:bg-[#bb8d02] focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl px-6 py-3 focus:outline-none">

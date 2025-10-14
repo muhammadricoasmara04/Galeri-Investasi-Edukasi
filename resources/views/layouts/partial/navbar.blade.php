@@ -13,7 +13,6 @@
              </div>
          </a>
 
-
          {{-- Tombol Hamburger --}}
          <button data-collapse-toggle="navbar-default" type="button"
              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -75,6 +74,15 @@
                      <a href="#contact"
                          class="nav-link group relative block py-2 px-3 text-gray-900 rounded-sm hover:text-blue-700 transition-colors duration-300">
                          Kontak
+                         <span
+                             class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                     </a>
+                 </li>
+
+                 <li>
+                     <a href="#"
+                         class="block py-2 px-3 bg-blue-700 text-white rounded-sm hover:bg-blue-200 transition-colors duration-300">
+                         Login
                          <span
                              class="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                      </a>

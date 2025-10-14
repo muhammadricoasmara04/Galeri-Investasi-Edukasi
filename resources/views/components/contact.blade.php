@@ -16,7 +16,8 @@
                         </div>
                         <div>
                             <p class="font-semibold">Alamat</p>
-                            <p class="text-gray-600">Jl. Pendidikan No. 1, Pelaihari, Tanah Laut, Kalimantan Selatan</p>
+                            <p class="text-gray-600">Jl.A.Syairani Komplek Perkantoran Gagas Pelaihari Kab.Tanah Laut
+                                70814</p>
                         </div>
                     </div>
 
@@ -26,7 +27,7 @@
                         </div>
                         <div>
                             <p class="font-semibold">Telepon</p>
-                            <p class="text-gray-600">(0512) 123-4567</p>
+                            <p class="text-gray-600">051221200</p>
                         </div>
                     </div>
 
@@ -36,7 +37,7 @@
                         </div>
                         <div>
                             <p class="font-semibold">Email</p>
-                            <p class="text-gray-600">info@sma1pelaihari.sch.id</p>
+                            <p class="text-gray-600">info@sman1plh.sch.id</p>
                         </div>
                     </div>
 
@@ -53,7 +54,7 @@
             </div>
 
             <div>
-                <form class="space-y-4">
+                <form action="mailto:info@sma1pelaihari.sch.id" method="post" enctype="text/plain">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
                         <input type="text"

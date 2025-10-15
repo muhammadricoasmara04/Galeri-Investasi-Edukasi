@@ -17,7 +17,7 @@ return [
     ],
     [
         'id' => 3,
-        'title' => 'Penerapan teknologi',
+        'title' => 'Penerapan Teknologi',
         'image' => 'img/galery/digital-banking.png',
         'description' => 'Pengalaman langsung menggunakan aplikasi keuangan digital',
         'fulldes' => ''
@@ -31,10 +31,17 @@ return [
     ],
     [
         'id' => 5,
-        'title' => 'Evaluasi serta keberlanjutan program',
+        'title' => 'Evaluasi',
         'image' => 'img/galery/evaluasi.png',
         'description' => 'Penghargaan kompetisi literasi keuangan tingkat daerah',
         'fulldes' => ''
     ],
-    
+    [
+        'id' => 6,
+        'title' => 'Keberlanjutan Program',
+        'image' => 'img/galery/keberlanjutan.png',
+        'description' => 'Fasilitas pembelajaran modern dengan teknologi terkini',
+        'fulldes' => ''
+    ],
+
 ];

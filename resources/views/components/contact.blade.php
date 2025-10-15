@@ -8,8 +8,8 @@
 
         <div class="grid md:grid-cols-2 gap-12">
             <div>
-                <h3 class="text-2xl font-semibold mb-6">Informasi Kontak</h3>
-                <h3 class="text-2xl font-semibold mb-6">SMA NEGRI 1 PELAIHARI</h3>
+                <h3 class="text-4xl font-semibold mb-6">Informasi Kontak</h3>
+                <p class="text-lg font-semibold mb-6">SMA NEGRI 1 PELAIHARI</p>
                 <div class="space-y-4">
 
                     {{-- NPSN --}}
@@ -64,46 +64,65 @@
 
 
             <div>
-                <form action="mailto:info@sma1pelaihari.sch.id" method="post" enctype="text/plain" class="space-y-4">
-                    <!-- Nama Lengkap -->
+                <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-4">
+                    <!-- Nama -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
-                        <input type="text"
-                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                            placeholder="Masukkan nama lengkap">
+                        <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg"
+                            required>
                     </div>
 
                     <!-- Email -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                        <input type="email"
-                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                            placeholder="Masukkan email">
+                        <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg"
+                            required>
                     </div>
 
                     <!-- Subjek -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Subjek</label>
-                        <input type="text"
-                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                            placeholder="Subjek pesan">
+                        <input type="text" id="subject" class="w-full p-3 border border-gray-300 rounded-lg"
+                            required>
                     </div>
 
                     <!-- Pesan -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
-                        <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                            placeholder="Tulis pesan Anda"></textarea>
+                        <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
                     </div>
 
-                    <!-- Tombol Kirim -->
-                    <button type="submit"
-                        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                    <!-- Tombol -->
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold">
                         Kirim Pesan
                     </button>
                 </form>
+
 
             </div>
         </div>
     </div>
 </section>
+<script>
+    function sendEmail(event) {
+        event.preventDefault(); // Supaya form tidak reload halaman
+
+        // Ambil nilai input
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Buat isi body email
+        const body =
+            `Nama: ${name}%0D%0A` +
+            `Email: ${email}%0D%0A` +
+            `Pesan:%0D%0A${message}`;
+
+        // Buat link mailto
+        const mailtoLink = `mailto:info@sma1pelaihari.sch.id?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+        // Arahkan user ke mailto link
+        window.location.href = mailtoLink;
+    }
+</script>

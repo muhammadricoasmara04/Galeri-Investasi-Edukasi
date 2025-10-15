@@ -9,7 +9,20 @@
         <div class="grid md:grid-cols-2 gap-12">
             <div>
                 <h3 class="text-2xl font-semibold mb-6">Informasi Kontak</h3>
+                <h3 class="text-2xl font-semibold mb-6">SMA NEGRI 1 PELAIHARI</h3>
                 <div class="space-y-4">
+
+                    {{-- NPSN --}}
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-red-600 flex-shrink-0">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold">NPSN</p>
+                            <p class="text-gray-600">30300697</p>
+                        </div>
+                    </div>
+
                     <!-- Alamat -->
                     <div class="flex items-start space-x-4">
                         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 flex-shrink-0">
@@ -23,16 +36,6 @@
                         </div>
                     </div>
 
-                    <!-- Telepon -->
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-600 flex-shrink-0">
-                            <i class="fas fa-phone text-white text-lg"></i>
-                        </div>
-                        <div class="flex-1">
-                            <p class="font-semibold">Telepon</p>
-                            <p class="text-gray-600">051221200</p>
-                        </div>
-                    </div>
 
                     <!-- Email -->
                     <div class="flex items-start space-x-4">
@@ -46,14 +49,14 @@
                         </div>
                     </div>
 
-                    <!-- Jam Operasional -->
+                    <!-- Telepon -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-red-600 flex-shrink-0">
-                            <i class="fas fa-clock text-white text-lg"></i>
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-600 flex-shrink-0">
+                            <i class="fas fa-phone text-white text-lg"></i>
                         </div>
                         <div class="flex-1">
-                            <p class="font-semibold">Jam Operasional</p>
-                            <p class="text-gray-600">Senin - Jumat: 07.00 - 15.00 WIB</p>
+                            <p class="font-semibold">Telepon</p>
+                            <p class="text-gray-600">051221200</p>
                         </div>
                     </div>
                 </div>

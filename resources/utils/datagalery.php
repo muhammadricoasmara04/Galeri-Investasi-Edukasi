@@ -4,43 +4,37 @@ return [
     [
         'id' => 1,
         'title' => 'Sosialisasi',
-        'image' => 'img/galery/invest.png',
+        'image' => 'img/galery/sosialisasi.jpeg',
         'description' => 'Siswa belajar konsep investasi melalui simulasi interaktif',
         'fulldes' => ''
     ],
     [
         'id' => 2,
         'title' => 'Pelatihan',
-        'image' => 'img/galery/presen-project.png',
+        'image' => 'img/galery/pelatihan.jpg',
         'description' => 'Presentasi rencana keuangan pribadi hasil karya siswa',
-        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
+        'fulldes' => ''
     ],
     [
         'id' => 3,
-        'title' => '3.	Penerapan teknologi',
+        'title' => 'Penerapan teknologi',
         'image' => 'img/galery/digital-banking.png',
         'description' => 'Pengalaman langsung menggunakan aplikasi keuangan digital',
-        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
+        'fulldes' => ''
     ],
     [
         'id' => 4,
         'title' => 'Pendampingan',
-        'image' => 'img/galery/financial-expert.png',
+        'image' => 'img/galery/pendampingan.jpg',
         'description' => 'Narasumber ahli berbagi pengalaman dan tips investasi',
-        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
+        'fulldes' => ''
     ],
     [
         'id' => 5,
         'title' => 'Evaluasi serta keberlanjutan program',
-        'image' => 'img/galery/achievment-student.png',
+        'image' => 'img/galery/evaluasi.png',
         'description' => 'Penghargaan kompetisi literasi keuangan tingkat daerah',
-        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
+        'fulldes' => ''
     ],
-    [
-        'id' => 6,
-        'title' => 'Ruang Galeri Investasi',
-        'image' => 'img/galery/room-galery.png',
-        'description' => 'Fasilitas pembelajaran modern dengan teknologi terkini',
-        'fulldes' => 'asdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdadadasdasdasdasdasdasdasdasdasdasdasdasdasd'
-    ],
+    
 ];

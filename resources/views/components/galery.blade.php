@@ -1,14 +1,19 @@
 @props(['galery', 'id' => null])
 <section id="{{ $id }}" class="py-10 bg-white">
     <div class="max-w-6xl mx-auto px-4 mt-10">
-        <div class="mx-auto max-w-4xl text-center">
+        <div class="mx-auto max-w-8xl text-center">
             <h2 class="text-[28px] sm:text-[40px] lg:text-[42px] font-bold mb-6 text-center">Galeri Kegiatan</h2>
-            <p class="text-[18px] sm:text-[24px] mt-2 text-[#4B5563]">
-                Dokumentasi pembelajaran dan pencapaian siswa
+            <p class="text-[18px] sm:text-[24px] mt-2 text-[#4B5563] text-justify">
+                Ucapan Terima kasih dan apresiasi setinggi-tingginya kami ucapkan kepada Kementerian Pendidikan Tinggi,
+                Sains dan Teknologi, melalui Direktorat Riset, Teknologi, dan Pengabdian Kepada Masyarakat atas dukungan
+                pendanaan melalui Skema Pemberdayaan Berbasis Masyarakat dengan Ruang Lingkup Pemberdayaan Masyarakat
+                Pemula, Lembaga Layanan Pendidikan Tinggi Wilayah XI, Galeri Investasi Edukasi BEI SMAN 1 Pelaihari, dan
+                Sekolah Tinggi Ilmu Ekonomi Pancasetia serta seluruh pihak yang terlibat dosen, dan mahasiswa atas
+                kontribusi nyata dalam menyukseskan program ini.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
             @foreach ($galery as $item)
                 <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105"
                     data-id="{{ $item['id'] }}" data-title="{{ $item['title'] }}"

@@ -1,7 +1,10 @@
 @props(['id' => null])
-<div class="flex items-center justify-center">
-    <img class="w-[800px]" src="/img/beranda/lms.png">
+<!-- Logo Header -->
+<div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 flex items-center justify-center">
+    <img class="w-[220px] sm:w-[400px] md:w-[550px] lg:w-[650px] xl:w-[700px] h-auto" src="/img/beranda/logo-header.png"
+        alt="Logo Header">
 </div>
+
 
 <section id="{{ $id }}" class="bg-[#6C6DD2] py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
